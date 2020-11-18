@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(Beige, DarkSeaGreen);
+  font-family: "Calibri", sans-serif;
+  font-size: 1.25rem;
+  margin: 0 auto;
+  max-width: 40rem;
+  padding: 0 2rem;
+}
+
+a {
+  color: Teal;
+  text-decoration-skip: ink;
+  transition: color .25s;
+}
+
+a:focus,
+a:hover {
+  color: GreenYellow;
+}
+
+a:active {
+  color: Black;
+}
+
+h1,
+h2 {
+  margin: 2rem 0 -.5rem;
+}
+
+h1 {
+  font-family: "Calibri", sans-serif;
+  font-size: 5rem;
+}
+
+h2 {
+  font-family: "Calibri", sans-serif;
+  font-size: 2.25rem;
+}
+
+p {
+  line-height: 1.25;
+}
+
+li ul {
+  margin: .75rem 0;
+}
+
+li {
+  margin-bottom: .25rem;
+}
+
+time {
+  font-size: 1rem;
+}
+
+s {
+  opacity: .6;
+}
+
+code, kbd {
+  background-color: WhiteSmoke;
+  font-family: "Source Code Pro", monospace;
+  letter-spacing: -1px;
+}
+
+.byline {
+  font-size: 1.5rem;
+}
+
+.link-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 1.25rem -.5rem 3rem;
+  padding: 0;
+}
+
+.link-list__item {
+  margin: 0;
+}
+
+.link-list__link {
+  align-items: center;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  padding: .25rem;
+  position: relative;
+  text-decoration: none;
+}
+
+.link-list__link:focus,
+.link-list__link:hover {
+  background-color: transparent;
+}
+
+.link-list__link:before {
+  background-color: Black;
+  border-radius: .188rem;
+  color: White;
+  content: attr(aria-label);
+  display: inline-block;
+  font-size: .75rem;
+  opacity: 0;
+  padding: .5rem;
+  position: absolute;
+  text-align: center;
+  transition: all .25s ease;
+}
+
+.link-list__link:focus:before,
+.link-list__link:hover:before {
+  opacity: 1;
+  transform: translateY(-110%);
+}
+
+.link-list__icon {
+  fill: currentColor;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.link-list__icon--dev {
+  background-color: currentColor;
+  fill: White;
+  padding: 0 .25rem;
+}
+
+#connect {
+  width: 400px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+#connect div {
+  width: 70px;
+  height: 70px;
+}
