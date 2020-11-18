@@ -1,3 +1,0 @@
-User-agent: *
-Disallow:
-Sitemap: https://karthij15.github.io/sitemap.xml
