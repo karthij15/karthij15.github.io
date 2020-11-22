@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -9,140 +8,118 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#000000">
   <link rel="manifest" href="manifest.json">
-  <link rel="icon" sizes="192x192" href="https://github.com/karthij15.png?size=192">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" sizes="192x192" href="https://github.com/karthij15.png?size=192">  <link href="https://fonts.googleapis.com/css?family=Rubik:300,500,700" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: calc(10px + 0.33vw);
+      -webkit-font-smoothing: antialiased;
+      padding: 5vh 10vw;
+      color: #121314;
+      margin: 0 auto;
+      max-width: 40rem;
+      padding: 0 2rem;
+    }
+    h1 {
+      font-size: 4.5em;
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+    p {
+      font-size: 1.6em;
+      font-weight: 300;
+      line-height: 1.4;
+      max-width: 26em;
+      text-align: justify;
+    }
+    a {
+      text-decoration: none;
+      color: #121314;
+      position: relative;
+    }
+    a:after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 60%;
+      left: -0.1em;
+      right: -0.1em;
+      bottom: 0;
+      transition: top 200ms cubic-bezier(0, .8, .13, 1);
+      background-color: rgba(79,192,141,0.5);
+    }
+    a:hover:after {
+      top: 0%;
+    }
+  </style>
 </head>
-
 <body>
-  <header>
-    <h1>Hello. </h1>
-    <p class="byline">My Name is <b>Karthi J</b>, a technically sophisticated engineering professional with more than 8 years of experience in effective Back-End implementation,integration, unit testing and deployment of software applicatest and Ready-to-Use customisable microservices</p>
-  </header>
-  <main>
-    <!-- <h2>Some history</h2>
-    <p>I've been coding on the web for <span id="codingYears">a long while</span>.</p>
-    <p>I first started out learning <a href="http://www.peachpit.com/store/html-4-for-the-world-wide-web-fourth-edition-visual-9780201354935" aria-describedby="external-site">HTML 4.0</a> and <code>table</code> layout.</p>
-    <p>A few years later I moved over to learn back end with PHP and MySQL. Around 2009<em>-ish</em> I realized my love for front end when the agency I was with at the time didn't have anyone available to work on a project.</p>
-    <p>It was about 2011 when I first experienced <a href="https://en.wikipedia.org/wiki/Screen_reader" aria-describedby="external-site">screen reader</a> technology. Ever since then my primary focus has been to <a href="https://medium.com/@svinkle/listening-to-the-web-part-one-thinking-in-accessibility-57af3cdb04e1" aria-describedby="external-site">create accessible user experiences</a> with HTML, CSS, and JavaScript.</p> -->
-    <h2>Background</h2>
-    <ul>
-	  <li>
-	  <p class="byline">I'm currently a Software Development Lead at <a href="https://Infosys.com/" aria-describedby="external-site">Infosys</a> involved in the development of few of the core SkavaONE microservices.</p>
-	  </li>
-	  <li><p class="byline">As a software engineer, I enjoy following TDD and refactoring. Interested in build applications that are scalable and efficient.</p></li>
-	  <li>
-	  <p class="byline">
-	  Supportive and reliable team player with a strong bias towards Software Quality and Project Deliverables.</p></li>
-    </ul>
-    <h2>Projects</h2>
-    <ul>
-      <li>
-		<p class="byline">
-        <a href="http://rue21.com/" aria-describedby="external-site">Rue21</a>: <b>Individual Contributor in Rue21 B2C Ecommerce Replatforming</b>
-		<br/>
-		<br/>
-		Involved in requirement elicitation, High level design strategy, back end development for Migration and Integration of User,Payment and Order data to Skava Platform.
-		<br/>
-		<br/>
-		Participated in brain storming and involved in discussions to perform Fit/Gap analysis of the
-		requirements to the Skava Commerce features.
-		</p>
-      </li>
-      <li>
-	    <p class="byline">
-        <a href="https://www.gap.com/" aria-describedby="external-site">Gap Inc</a>: <b>Developer Lead in Gap Inc LeapFrog Search API Service</b>
-		<br/>
-		<br/>
-		Leading a team of 5 engineers to modernize Gap Inc’s Ecommerce Search platform using MicroService Architecture and Event Processing without breaking existing Product Search Contract.
-		</p>
-      </li>
-	  <li>
-	    <p class="byline">
-        <a href="https://www.skava.com/" aria-describedby="external-site">Skava</a>: <b>Developer Lead in Back End Development of Cart Checkout SkavaONE Microservice</b>
-		<br/>
-		<br/>
-		Leading a team of 5 engineers to develop a Ready-to-Use customisable miicroservice Product which provides a rich cart experience with features like save for later, cart abandonment and persisted carts to remind users.
-		<br/>
-		<br/>
-		Ability to plug-in third party connectors for Payment authorization, Shipping cost calculation, Address verification and Tax calculator services. These components are independently replaceable and upgradable.
-		</p>
-      </li>
-	  <li>
-	    <p class="byline">
-        <a href="https://www.skava.com/" aria-describedby="external-site">Skava</a>: <b>Senior Software Engineer in Back End Product Development of PIM, PIMAdmin Microservice </b>
-		<br/>
-		<br/>
-		Part of the development team involved in back end development, schema design for some of the product(B2C) core modules like structured storage of products, categories, stock keeping units, facets and prices.
-		<br/>
-		<br/>
-		worked in User friendly admin console(B2B) to create and manage product catalog information using admin panel.
-		</p>
-      </li>
-    </ul>
-  </main>
-  <footer>
-    <h2>Find me elsewhere</h2>
-	<br/>
-	<div id="connect">
-	  <div ><a href="https://github.com/karthij15" class="link-list__link" aria-label="GitHub" aria-describedby="external-site">
-          <svg class="link-list__icon" viewBox="0 0 48 48" focusable="false" aria-hidden="true">
-            <use xlink:href="#github"></use>
-          </svg>
-        </a></div>
-	  <div ><a href="https://reddit.com/user/karthij" class="link-list__link" aria-label="Reddit" aria-describedby="external-site">
-          <svg class="link-list__icon" viewBox="0 0 48 48" focusable="false" aria-hidden="true">
-            <use xlink:href="#reddit"></use>
-          </svg>
-        </a></div>
-	  <div ><a href="https://www.linkedin.com/in/karthi-janaki-raman-b32b21142/" class="link-list__link" aria-label="LinkedIn" aria-describedby="external-site">
-          <svg class="link-list__icon" viewBox="0 0 48 48" focusable="false" aria-hidden="true">
-            <use xlink:href="#linkedin"></use>
-          </svg>
-        </a></div>
-	</div>
-	  <!--
-      <li class="link-list__item">
-        
-      </li>
-      <li class="link-list__item">
-        
-      </li>
-      <li class="link-list__item">
-        
-      </li>
-	  -->
-    </ul>
-  </footer>
-  <div hidden>
-    <span id="external-site">opens an external site</span>
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <symbol id="github" viewBox="0 0 48 48">
-        <g transform="scale(0.046875 0.046875)">
-        <path d="M512.008 12.642c-282.738 0-512.008 229.218-512.008 511.998 0 226.214 146.704 418.132 350.136 485.836 25.586 4.738 34.992-11.11 34.992-24.632 0-12.204-0.48-52.542-0.696-95.324-142.448 30.976-172.504-60.41-172.504-60.41-23.282-59.176-56.848-74.916-56.848-74.916-46.452-31.778 3.51-31.124 3.51-31.124 51.4 3.61 78.476 52.766 78.476 52.766 45.672 78.27 119.776 55.64 149.004 42.558 4.588-33.086 17.852-55.68 32.506-68.464-113.73-12.942-233.276-56.85-233.276-253.032 0-55.898 20.004-101.574 52.76-137.428-5.316-12.9-22.854-64.972 4.952-135.5 0 0 43.006-13.752 140.84 52.49 40.836-11.348 84.636-17.036 128.154-17.234 43.502 0.198 87.336 5.886 128.256 17.234 97.734-66.244 140.656-52.49 140.656-52.49 27.872 70.528 10.35 122.6 5.036 135.5 32.82 35.856 52.694 81.532 52.694 137.428 0 196.654-119.778 239.95-233.79 252.624 18.364 15.89 34.724 47.046 34.724 94.812 0 68.508-0.596 123.644-0.596 140.508 0 13.628 9.222 29.594 35.172 24.566 203.322-67.776 349.842-259.626 349.842-485.768 0-282.78-229.234-511.998-511.992-511.998z"></path>
-        </g>
-      </symbol>
-      <symbol id="reddit" viewBox="0 0 48 48">
-        <g transform="scale(0.046875 0.046875)">
-          <path d="M625.714 666.857c5.143 5.143 5.143 13.143 0 17.714-32.571 32.571-95.429 35.429-113.714 35.429s-81.143-2.857-113.714-35.429c-5.143-4.571-5.143-12.571 0-17.714 4.571-4.571 12.571-4.571 17.143 0 20.571 21.143 65.143 28 96.571 28s75.429-6.857 96.571-28c4.571-4.571 12.571-4.571 17.143 0zM450.286 563.429c0 28-22.857 50.857-50.857 50.857-28.571 0-51.429-22.857-51.429-50.857 0-28.571 22.857-51.429 51.429-51.429 28 0 50.857 22.857 50.857 51.429zM676 563.429c0 28-22.857 50.857-51.429 50.857-28 0-50.857-22.857-50.857-50.857 0-28.571 22.857-51.429 50.857-51.429 28.571 0 51.429 22.857 51.429 51.429zM819.429 494.857c0-37.714-30.857-68-68.571-68-19.429 0-36.571 8-49.143 20.571-46.286-32-108.571-52.571-177.714-54.857l36-161.714 114.286 25.714c0 28 22.857 50.857 50.857 50.857 28.571 0 51.429-23.429 51.429-51.429s-22.857-51.429-51.429-51.429c-20 0-37.143 12-45.714 28.571l-126.286-28c-6.286-1.714-12.571 2.857-14.286 9.143l-39.429 178.286c-68.571 2.857-130.286 23.429-176.571 55.429-12.571-13.143-30.286-21.143-49.714-21.143-37.714 0-68.571 30.286-68.571 68 0 27.429 16 50.286 38.857 61.714-2.286 10.286-3.429 21.143-3.429 32 0 108.571 122.286 196.571 272.571 196.571 150.857 0 273.143-88 273.143-196.571 0-10.857-1.143-22.286-4-32.571 22.286-11.429 37.714-34.286 37.714-61.143zM1024 512c0 282.857-229.143 512-512 512s-512-229.143-512-512 229.143-512 512-512 512 229.143 512 512z"></path>
-        </g>
-      </symbol>
-      <symbol id="linkedin" viewBox="0 0 48 48">
-        <g transform="scale(0.046875 0.046875)">
-          <path d="M398.355,0H31.782C14.229,0,0.002,13.793,0.002,30.817v368.471
-		c0,17.025,14.232,30.83,31.78,30.83h366.573c17.549,0,31.76-13.814,31.76-30.83V30.817C430.115,13.798,415.904,0,398.355,0z
-		 M130.4,360.038H65.413V165.845H130.4V360.038z M97.913,139.315h-0.437c-21.793,0-35.92-14.904-35.92-33.563
-		c0-19.035,14.542-33.535,36.767-33.535c22.227,0,35.899,14.496,36.331,33.535C134.654,124.415,120.555,139.315,97.913,139.315z
-		 M364.659,360.038h-64.966V256.138c0-26.107-9.413-43.921-32.907-43.921c-17.973,0-28.642,12.018-33.327,23.621
-		c-1.736,4.144-2.166,9.94-2.166,15.728v108.468h-64.954c0,0,0.85-175.979,0-194.192h64.964v27.531
-		c8.624-13.229,24.035-32.1,58.534-32.1c42.76,0,74.822,27.739,74.822,87.414V360.038z M230.883,193.99
-		c0.111-0.182,0.266-0.401,0.42-0.614v0.614H230.883z"/>
-        </g>
-      </symbol>
-    </svg>
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
-  <script src="js/main.js"></script>
-</body>
+  <h1>Hello.</h1>
+  <p style="font-weight:500; font-size:2.2em">
+    My Name is Karthi J.
+  </p>
+  <p>
+    A technically sophisticated engineering professional with more than 8 years of experience in effective Backend implementation, integration, unit testing and deployment of software application and Ready-to-Use customisable microservices.
+  </p>
 
+  <p style="font-weight:500; font-size:2.2em">
+    Background.
+  </p>
+  <p>
+    I'm currently a Software Development Lead at <a href="https://Infosys.com/" target="_blank">Infosys</a> involved in the development of few of the core SkavaONE microservices. As a software engineer, I enjoy following TDD and refactoring. Interested in build applications that are scalable and efficient. Supportive and reliable team player with a strong bias towards Software Quality and Project Deliverables.
+  </p>
+
+  <p style="font-weight:500; font-size:2.2em">
+    Projects.
+  </p>
+  <p>
+  <a href="http://rue21.com/" target="_blank">Rue21</a>: Individual Contributor in Rue21 B2C Ecommerce Replatforming
+	<br/>
+	Involved in requirement elicitation, High level design strategy, back end development for Migration and Integration of User,Payment and Order data to Skava Platform.
+	Participated in brain storming and involved in discussions to perform Fit/Gap analysis of the
+	requirements to the Skava Commerce features.
+	<br/>
+  </p>
+  <p>
+  <a href="https://www.gap.com/" target="_blank">Gap Inc</a>: Developer Lead in Gap Inc LeapFrog Search API Service
+	<br/>
+	Leading a team of 5 engineers to modernize Gap Inc’s Ecommerce Search platform using MicroService Architecture and Event Processing without breaking existing Product Search Contract.
+	<br/>
+  </p>
+  <p>
+  <a href="https://www.skava.com/" target="_blank">Skava</a>: Developer Lead in Back End Development of Cart Checkout SkavaONE Microservice
+	<br/>
+	Leading a team of 4 engineers to develop a Ready-to-Use customisable miicroservice Product which provides a rich cart experience with features like save for later, cart abandonment and persisted carts to remind users.Ability to plug-in third party connectors for Payment authorization, Shipping cost calculation, Address verification and Tax calculator services. These components are independently replaceable and upgradable.
+	<br/>
+  </p>
+  <p>
+  <a href="https://www.skava.com/" target="_blank">Skava</a>: Senior Software Engineer in Back End Product Development of Catalog, Merchandising Microservice 
+	<br/>
+	Part of the development team involved in back end development, schema design for some of the product(B2C) core modules like structured storage of products, categories, stock keeping units, facets and prices. Worked in User friendly admin console(B2B) to create and manage product catalog information using admin panel.
+	<br/>
+  </p>
+
+  <p style="font-weight:500; font-size:2.2em">
+    Find me elsewhere.
+  </p>
+  <p>
+    I have a <a href="https://github.com/karthij15" target="_blank">Github</a>
+    which I actively update - you probably want to follow me on
+    <a href="https://www.linkedin.com/in/karthi-janaki-raman-b32b21142" target="_blank">LinkedIn</a> and
+    <a href="https://reddit.com/user/karthij" target="_blank">Reddit</a>
+    for more up-to-date content.
+  </p>
+ 
+  <p style="font-weight:500; font-size:2.2em">
+    If Time permits,
+  </p>
+  <p>
+    Outside of programming and helping my mom and wife,
+    I enjoy watching samurai movies.
+  </p>
+</body>
 </html>
